@@ -28,10 +28,10 @@ prefect agent start -q dev-queue1
 
 Create the deployment for the python task 
 ```
-prefect deployment build ./first-deployed-flow.py:log_flow -n first-simple-log -q queue1-test
+prefect deployment build ./first-deployed-flow.py:log_flow -n first-simple-log -q dev-queue1
 ```
 
-Configure the yaml 
+Configure the yaml file that is generated for the deployment, then deploy the flow. 
 
 ```bash
 prefect deployment apply log_flow-deployment.yaml
